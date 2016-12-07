@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<script src="MyCookiesFile.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body onload="document.form1.reset()">
+
+		<h2> Got Milk? </h2>
+		<form>
+			what is your name?
+			<br/>
+			<input type="text" name="yourname" />
+			<br/>
+			what is your favorite color?
+			<br/>
+			<input type="text" name="yourcolor" />
+			<br/>
+			<p>
+				<input type="button" value="Make cookie" onclick="makeCookies(this.form);" />
+			</p>
+			<p>
+				<input type="button" value="Get cookie" onclick="welcome(this.form);" />
+			</p>
+
+		</form>
+	</body>
+</html>

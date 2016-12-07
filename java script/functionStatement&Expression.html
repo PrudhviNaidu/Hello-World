@@ -1,0 +1,31 @@
+<html>
+	<script>
+		greet();
+
+		function greet() {
+		    console.log('hi');   
+		}
+
+		//try 		anonymousGreet();    	here
+
+		var anonymousGreet = function() {
+		    console.log('Hello');   
+		}
+
+		anonymousGreet();	//remove 
+
+		function log(a) {
+			console.log(a);
+			console.log(a.x);
+		   a.function();    
+		}
+
+		log({
+			x: 'Hanh',
+			function() {
+		    	console.log('Bye');
+			}
+		});
+	</script>
+</html>
+

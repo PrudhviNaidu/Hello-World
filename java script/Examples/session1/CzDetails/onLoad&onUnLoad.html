@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" charset="utf-8">
+
+function Loader(){
+var sec=0;
+var newdate= new Date();
+var hours = newdate.getHours();
+var minutes = newdate.getMinutes();
+var seconds= newdate.getSeconds();
+var time = hours +":"+ minutes + ":" + seconds;
+window.setInterval("counter()",1000);
+alert("Document is finished Loading and Time is: " +time);
+}
+function counter()
+{
+	sec++;
+	alert(sec);
+	
+}
+function unloading(){
+	alert("you are browsing for"+sec+"seconds");
+}
+</script>
+
+</head>
+<body onload="Loader();" onunload="unloading();">
+	<p> You are loading a page</p>
+	</script>
+</body>
+</html>

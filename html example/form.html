@@ -1,0 +1,73 @@
+<html>
+<head><title>User form</title></head>
+<body>
+<FONT FACE="ARIAL" SIZE="4">
+<H2 ALIGN="CENTER"><FONT COLOR="RED">A</FONT><FONT COLOR="GREEN">B</FONT><FONT COLOR="BLUE">C</FONT> <FONT COLOR="PURPLE">Electronics</FONT></H2>
+<H3 ALIGN="CENTER">Survey Form</H3>
+<P>If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department.&nbsp; Answering any question is optional, and all information will be kept strictly confidential.&nbsp; Thank you very much for your time!</P>
+
+<FORM METHOD="POST" ACTION="">
+<OL>
+<LI><P>What is your name?<BR>
+<INPUT TYPE="TEXT" NAME="Name" SIZE="40" placeholder="first name"></P>
+
+<LI><P>What is your date of birth?<BR>
+<TABLE CELLSPACING="5">
+    <TR>
+        <TD>
+            Month: 
+            <SELECT NAME="Month">
+                <OPTION>January<OPTION>February<OPTION>March<OPTION>April
+                <OPTION>May<OPTION>June<OPTION>July<OPTION>August
+                <OPTION selected>September<OPTION>October<OPTION>November<OPTION>December
+            </SELECT>
+        </TD>
+        <TD>
+            Date: 
+            <SELECT NAME="Date">
+                <OPTION SELECTED>1<OPTION>2<OPTION>3<OPTION>4<OPTION>5<OPTION>6
+                <OPTION>7<OPTION>8<OPTION>9<OPTION>10<OPTION>11<OPTION>12
+                <OPTION>13<OPTION>14<OPTION>15<OPTION>16<OPTION>17<OPTION>18
+                <OPTION>19<OPTION>20<OPTION>21<OPTION>22<OPTION>23<OPTION>24
+                <OPTION>25<OPTION>26<OPTION>27<OPTION>28<OPTION>29<OPTION>30
+                <OPTION>31
+            </SELECT>
+        </TD>
+        <TD>
+            Year: <INPUT TYPE="TEXT" NAME="Year" SIZE="4" VALUE="19">
+        </TD>
+    </TR>
+</TABLE></P>
+
+<LI><P>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?<BR>
+<TEXTAREA NAME="Address" ROWS="4" COLS="50"></TEXTAREA></P>
+
+<LI><P>What is your email address?<BR>
+<INPUT TYPE="TEXT" NAME="Email" SIZE="30"></P>
+
+<LI><P>Have you viewed our online product catalog?<BR>
+<INPUT TYPE="RADIO" NAME="Online catalog" VALUE="Yes" CHECKED>Yes
+<INPUT TYPE="RADIO" NAME="Online catalog" VALUE="No">No</P>
+
+<LI><P>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future?  (Check all that apply.)<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="VCR">VCR<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="Big Screen TV">Big Screen TV<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="Audio equipment">Audio Equipment<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="Video equipment">Video Equipment<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="Camera equipment">Camera Equipment<BR>
+<INPUT TYPE="CHECKBOX" NAME="Product interest" VALUE="Other" CHECKED>Other <INPUT TYPE="TEXT" NAME="Other" SIZE="40" VALUE="Please List: "></P>
+
+<LI><P>Do you have any questions, comments or suggestions before proceeding to the Order Form?<BR>
+<TEXTAREA NAME="Comments" ROWS="6" COLS="50">Your Input: </TEXTAREA>
+<CENTER>
+<TABLE CELLSPACING="30">
+<TR>
+<TD><INPUT TYPE="SUBMIT" VALUE="Send Form"></TD>
+<TD><INPUT TYPE="RESET" VALUE="Clear Form"></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+</OL>
+</FORM><BR>
+</body>
+</html>

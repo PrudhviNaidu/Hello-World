@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Rectangle_Mensuration</title>
+		<script type="text/javascript" charset="utf-8">
+			function Area_Mensuration(breadth, height) {
+				var area = function() {
+					var area = breadth * height;
+					alert("Area of " + breadth + " and" + height + " is " + area);
+				}
+				return area;
+			}
+
+			function Perim_Mensuration(breadth, height) {
+				alert("Nothin to Display");
+				var perim = function() {
+					var area = 2* (breadth + height);
+					alert("Area of " + breadth + " and" + height + " is " + area);
+				}
+				return perim;
+			}
+
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript" charset="utf-8">
+			var men1 = Area_Mensuration(20, 40);
+			alert(men1);
+			alert(men1()); 			
+			var men2 = Perim_Mensuration(10, 20);
+			men2();
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BookInfoDisp.html</title>
+	</head>
+	<body>
+		
+<script src="Book_Info.js" type="text/javascript" charset="utf-8">
+
+			document.writeln("Page Break <br>");
+			var mybook = new Info_of_book("Javascript by example", "Ellie Quigley", "Prentice Hall");
+			mybook.pagenumber = 5;
+			document.write("<b>" + mybook.title + "<br>" + mybook.author + "<br>" + mybook.publisher + "<br> current page is:" + mybook.pagenumber);
+			document.write("<br> Page forward:");
+
+			for ( i = 0; i < 3; i++) {
+				document.write("<br>" + mybook.uppage());
+			}
+
+			document.write("<br/> page backward");
+
+			for (; i > 0; i--) {
+				document.write("<br/>" + mybook.backpage());
+			}
+	</script>
+	</body>
+</html>

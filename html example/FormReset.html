@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reset form fields value using JavaScript - Demo Preview</title>
+        <meta content="noindex, nofollow" name="robots">
+        <!-- Include CSS File Here -->
+        <link href="js/reset_form.css" rel="stylesheet">
+        <!-- Include JS File Here -->
+        <script src="../reset-form.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!--=================================================================
+            First Div For Form
+            ===================================================================-->
+            <div id="first">
+                <h1>Please fill this form and check reset button.</h1>
+                <form id="myform" name="myform">
+                    <label>First name :</label><br>
+                    <input id="fname" name="fname" placeholder="First Name" type="text"><br><br>
+                    <label>Last name :</label><br>
+                    <input id="lname" name="lname" placeholder="Last Name" type="text"><br><br>
+                    <label>Email :</label><br>
+                    <input id="email" name="email" placeholder="Email" type="text"><br><br>
+                    <label>Contact No. :</label><br>
+                    <input id="contact" name="contact" placeholder="Contact No." type="text"><br><br>
+                    <div class="center">
+                        <input id="submit" onclick="submitform()" type="button" value="Submit Form">
+                        <input id="button" onclick="reset()" type="button" value="Reset Form" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

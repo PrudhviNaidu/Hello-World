@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script>
+function newDoc() {     window.location.assign("http://www.w3schools.com")
+}
+</script>
+<body>
+
+<p>Display the entire URL of the current page.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Page location is: " + window.location.href;
+    
+document.getElementById("demo").innerHTML =
+"Page hostname is " + window.location.hostname;
+    
+document.getElementById("demo").innerHTML =
+"Page path is " + window.location.pathname;
+    
+document.getElementById("demo").innerHTML =
+"Page protocol is " + window.location.protocol;
+    
+<input type="button" value="Load new document" onclick="newDoc()">
+
+</script>
+
+</body>
+</html>
+

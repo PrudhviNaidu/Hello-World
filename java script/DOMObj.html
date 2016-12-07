@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script type="text/javascript">  
+function getcube(){  
+    var number=document.getElementById("number").value;
+
+    var gender=document.getElementsByName("gender");
+    
+    var totalpara=document.getElementsByTagName("p");
+    
+    var countClass = document.getElementsByClassName("count");
+    
+    alert(number*number*number);
+
+    console.log(gender);
+    //display the value based on check mark
+    
+    alert("total p tags are: "+totalpara.length);
+    console.log(totalpara);
+    
+    console.log(countClass);
+    console.log(countClass[0].innerText);
+
+}  
+</script>
+</head>
+<body>
+    <p>This is a simple program.</p>  
+    <p class="count">Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+    <p>Let's see the simple example</p>  
+    <form>
+    Enter No:<input type="text" id="number" name="number" placeholder="enter some number" /><br/>
+
+    Male:<input type="radio" name="gender" value="male">  
+    Female:<input type="radio" name="gender" value="female">  
+
+    <input type="button" value="cube" onclick="getcube()"/>
+</form>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+body{
+    background-color: #1D394D;
+    color: white;
+    font-family: 'Slabo 27px', serif;    
+    font-size: 17px;
+    margin: 0px; //remove this 
+}
+header{
+    background-color: #1D394D;
+    display: inline-flex;
+}
+
+.header__div{
+    border-bottom: 1px groove yellow;
+    height: 50px;
+    width: 100%;
+}
+.header__div--head{
+    font-size: 30px;
+    width:30%;
+    text-align: center;
+    padding: 10px;
+    color: #E2D80D;
+    font-family: 'Bitter', serif;
+}
+.header__div--header-opts{
+    width: 70%;
+}
+.header__div--header-ul{
+    list-style: none;
+    float: right;
+    display: inline-flex;
+    margin: 0px;
+    position: relative;
+    top: 12px;
+    margin-right: 100px;
+}
+.header__div--header-li:first-child{
+    text-decoration: underline;
+    color: #B6A906;
+}
+.header__div--header-li:hover{
+    color: #B6A906;
+    cursor: pointer;
+}
+.header__div--header-li{
+    padding: 10px    
+}
+.section__div{
+    background: url(sky-690293_960_720.jpg);
+    height: 550px;
+    background-repeat: round;
+}
+.section__div--block{
+    display: block;
+    position: absolute;
+    top:30%;
+    left:25%;
+    background-color: #1D394D;
+    opacity: 0.8;
+    padding: 30px;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    
+}
+.section__div--title{
+    font-size: 30px;
+}
+.section__div__form-title{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.section__div__form{
+    margin-top: 30px;
+}
+.section__div__form input,.section__div__form button{
+    font-size: 22px;
+}
+
+input{
+    padding: 3px;
+    font-size: 15px !important;
+    width: 60%;
+    height: 31px;
+    padding: 1px !important;
+}
+input:focus{
+    background-color: #DDD;
+}
+button{
+    background-color: #B6A906 ;
+    color: white;
+    font-size: 15px !important;
+    font-family: 'Slabo 27px', serif;    
+    height: 36px;
+    width: 15%;
+    border: 1px solid #B6A906;
+    cursor: pointer;
+}
+button:hover{
+    background: #1D394D;
+    color: #B6A906;
+}
+
+.footer__div, .footer__details{
+    color: #B6A906;
+    display: inline-flex;
+}
+.footer__div{
+    width: 100%;
+}
+.footer__details{
+    float: right;
+    text-align: right;
+}
+.footer--privacy{
+    width: 40%;
+}
+.footer__details--aboutUs, .footer__details--team, .footer__details--location, .footer--privacy{
+    padding: 0px 20px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert title here</title>
+        <script src="AddFunction.js"  type="text/javascript" charset="utf-8"></script>
+	</Head>
+	<body>
+        <script>			
+			var num1=prompt("enter value for a:", "");
+			var num2=prompt("enter value for b:", "");
+			var a = eval(num1);
+			var b = eval(num2);
+			var res = add(a, b);
+			alert("result is:" + res);
+            console.log(anonymAdd);
+            console.log(anonymAdd());
+            
+            var result = callBackAdd(10, anonymAdd());
+            console.log(result);
+		</script>
+	</body>
+</html>

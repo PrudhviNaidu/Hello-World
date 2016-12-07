@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Cars Manufacturing</title>
+		<script type="text/javascript" charset="utf-8">
+			const Brand="Audi";
+			var Model = new Object();
+			Model.name = "A6";
+			Model.CC = 10000;
+			Model.Price = 5000000;
+			Model.PropDis = limitedCars;
+			
+			function limitedCars(){
+				document.writeln("Brand: "+ Brand + " <br> Car's Name: "+ Model.name +"</br>"+" cc " + Model.cc + "</br> price= "+Model.Price);
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" charset="utf-8">
+			Model.PropDis();
+			Model.cc= 5000;
+			Model.PropDis();	
+		</script>
+	</body>
+</html>

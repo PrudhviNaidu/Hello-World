@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<script type="text/javascript" charset="utf-8">
+			function alert1(var1) {
+				alert(var1.name.value);
+			}
+			function alert2(var2){
+				alert(var2.name.value);
+			}
+			function alert3(Var3)
+			{
+				if(var3.submit3.checked==true)
+						{
+							alert("true")
+							} else{
+								alert("false")
+								}
+			}
+		</script>
+
+	</head>
+	<body>
+		<form name="form1">
+			Type your name:
+			<input type="text" name="name" size="30" onchange="changed" value="name">
+			</br>password:
+			<input type="text" name="password" size="30"  name="password" value="password">
+			</br>
+			<input type = "button" onclick="javascript:alert1(this.form);" value="submit">
+		</br>
+		<input type = "button" onclick="javascript:alert1(this);" value="submit2">
+		
+		<input type="checkbox" name="accept" value="0">
+		<input type="button" name="submit3" value="submit3" onclick="javascript:alert3(this)"> 
+		</form>
+	</body>
+</html>

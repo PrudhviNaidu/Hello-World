@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert title here</title>
+		<script type="text/javascript" charset="utf-8">
+			var myUrl;
+			function opensite(url) {
+				parent.xxx.location = url;
+				//xxx is name of the frame on which page have to load
+				myUrl = url;
+			}
+
+			function collapse() {
+				if (!myUrl) {
+					parent.location = "ItemsMenuMain.html";
+				} else {
+					parent.location = myUrl;
+					//parent. location will make the webpage to load on entire window not in frame
+				}
+			}
+
+		</script>
+
+	</head>
+	<body>
+		<p>
+			<a href="javaScript:opensite('ItemsMenuMain.html')">Home</a>
+		</p>
+		<p>
+			<a href="javaScript:opensite('http://www.w3schools.com/tags/tag_iframe.asp')">W3Schools</a>
+		</p>
+		<p>
+			<a href="javaScript:opensite('https://www.google.co.in/?gfe_rd=cr&ei=d9FaVr3PL6vG8AfBw5lI&gws_rd=ssl')">google</a>
+		</p>
+		<p>
+			<a href="javaScript:opensite('https://www.facebook.com/')">facebook</a>
+		</p>
+		<p>
+			<a href="javaScript:collapse()">Hide Menu</a>
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="UserVerification.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<b>
+	<form name="info" action="" method="post" onsubmit="return userChecking(document.info)">
+		<b><br/>
+			Type your name: 
+			<input type="text" name="namestring" size="50" value="name" onFocus="this.select()"/>
+			<br>Type your address:
+			<input type="text" name="namestring2" size="50" value="address" onFocus="this.select()"/>
+			<br/>
+		</b>
+	</form>
+    <input type="submit" onClick="userChecking(document.info)"/>&nbsp;
+    <input type="reset" />
+</b>
+</form>
+</body>
+</html>

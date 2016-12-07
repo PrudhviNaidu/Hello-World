@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Cars Manufacturing</title>
+
+		<script src="js/CarTypes.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript" charset="utf-8">
+			var Model = new Object();
+			Model.name = "Spider";
+			Model.CC = 10000;
+			Model.Price = 50000000;
+			Model.LCars = limitedCars;
+
+			Model.LCars();
+			Model.name = "A1";
+			Model.LCars();
+
+			var Luxury = new Object();
+			Luxury.name = "BXXX";
+			Luxury.CC = 5000;
+			Luxury.Price = 100000;
+			Luxury.LuxCars = limitedCars;
+			Luxury.LuxCars();
+
+			var cedan = new cars();
+			alert("Brand: " + Brand + " '<br>' Car's Name: " + cedan.name + "<br>" + " cc " + cedan.CC + "<br> price= " + cedan.Price);
+
+			var hatchback = new HatchBackCars("Q3", 5000, 6000000);
+			document.write("<br> <br> car Type" + hatchback.carType()+"<br> <br> color" + hatchback.colorType() + "<br><br> Brakes Types" + hatchback.brakes());
+
+			var hatch = new HatchBackCars();
+			document.write("<br>"+ hatch.carType());
+			
+		</script>
+	</body>
+</html>
